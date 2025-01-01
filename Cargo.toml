@@ -1,0 +1,7 @@
+[package]
+name = "r_widgets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chunks-rs = {git = "https://github.com/bhaumik-tripathi/chunks-rs", branch = "revealer"}
