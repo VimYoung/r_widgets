@@ -1,6 +1,6 @@
 use chunks_rs::GtkCmdLineExt;
 use chunks_rs::{utils::load_css, Factory, GtkApp, GtkCmdLine};
-use r_widgets::{show_hello, storage};
+use r_widgets::{scroller_text, show_hello, storage};
 use std::env;
 
 const STYLE: &str = include_str!("style.css");
@@ -26,6 +26,12 @@ fn main() {
                 load_css(STYLE);
                 0
             }
+            "scroller-text" => {
+                scroller_text(app);
+                load_css(STYLE);
+                0
+            }
+
             arg => {
                 eprintln!("Unknown argument: {arg}");
                 1

@@ -4,4 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-chunks-rs = {git = "https://github.com/bhaumik-tripathi/chunks-rs", branch = "revealer"}
+# chunks-rs = {git = "https://github.com/bhaumik-tripathi/chunks-rs", branch = "revealer"}
+chunks-rs = {path = "/home/bhaumik/chunks-rs/"}
+# chunks-rs = "0.7.3"
